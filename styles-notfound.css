@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: 'Muli', sans-serif;
+}
+.header {
+  align-items: center;
+  background-color: #086972;
+  color: white;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  top: 0px;
+  width: 100%;
+}
+.header__img {
+  margin-left: 30px;
+  width: 200px;
+}
+
+.error {
+  background: linear-gradient(#086972, #87dfd6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 30px;
+  min-height: calc(100vh - 200px);
+}
+
+.error__not-found {
+  color: white;
+  padding: 60px 68px 40px;
+  min-height: 200px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.error__not-found h1 {
+  font-size: 80px;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.error__not-found--title {
+  width: 100px;
+  height: 100px;
+}
+
+.error__not-found img {
+  width: -60px;
+  height: -60px;
+  position: relative;
+  animation-name: ghost ;
+  animation-duration: 15s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ghost {
+  0% {left:0px; top:0px;}
+  25% {left:230px; top:0px;}
+  50% {left:230px; top:-165px;}
+  75% {left:0px; top:-165px;}
+  100% {left:0px; top:0px;}
+}
+
+.error__not-found p {
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  margin: 10px 0px;;
+}
+
+.error__not-found a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.error__not-found a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #87dfd6;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+
+.footer a {
+  color: dimgray;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Muli', sans-serif;
+  padding-left: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  .login__container {
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  width: 100%;
+  }
+
+  .footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
